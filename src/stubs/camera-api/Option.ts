@@ -146,7 +146,7 @@ export class Option implements PropertyValue {
      * @readonly
      * @enum {number}
      */
-     static readonly EvfOutputDevice = {"Mobile":4,"Mobile2":8,"None":0,"PC":2,"TFT":1};
+     static readonly EvfOutputDevice = {"None":0,"PC":2,"TFT":1};
     /**
      * @readonly
      * @enum {number}

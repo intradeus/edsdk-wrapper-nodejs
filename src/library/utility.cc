@@ -9,7 +9,11 @@ namespace CameraApi {
 
     std::string CodeToHexLabel(int code) {
         char label[11];
+        #ifdef __MACOS__
+        snprintf(label, 11, "0x%08x", code);
+        #else
         sprintf_s(label, "0x%08x", code);
+        #endif
         return label;
     }
 

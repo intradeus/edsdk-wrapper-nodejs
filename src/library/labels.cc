@@ -40,7 +40,10 @@ namespace CameraApi {
         {kEdsPropID_DateTime, "DateTime"},
         {kEdsPropID_FirmwareVersion, "FirmwareVersion"},
         {kEdsPropID_BatteryLevel, "BatteryLevel"},
+// CFn not available on macOS
+#ifdef kEdsPropID_CFn
         {kEdsPropID_CFn, "CFn"},
+#endif
         {kEdsPropID_SaveTo, "SaveTo"},
         {kEdsPropID_CurrentStorage, "CurrentStorage"},
         {kEdsPropID_CurrentFolder, "CurrentFolder"},
@@ -332,9 +335,12 @@ namespace CameraApi {
     LabelMap Labels::EvfOutputDevice = {
         {0x00, "None"},
         {kEdsEvfOutputDevice_PC, "PC"},
-        {kEdsEvfOutputDevice_TFT, "TFT"},
-        {kEdsEvfOutputDevice_MOBILE, "Mobile"},
+        {kEdsEvfOutputDevice_TFT, "TFT"}
+// Mobile not available on macOS
+#ifdef kEdsEvfOutputDevice_MOBILE
+        ,{kEdsEvfOutputDevice_MOBILE, "Mobile"},
         {kEdsEvfOutputDevice_MOBILE2, "Mobile2"}
+#endif
     };
 
     LabelMap Labels::EvfZoom = {
