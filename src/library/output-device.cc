@@ -4,7 +4,11 @@
 namespace CameraApi {
 
     LabelMap OutputDeviceLabels = {
-        {kEdsEvfOutputDevice_TFT, "TFT"},
+// Mobile not available on macOS
+#ifdef kEdsEvfOutputDevice_MOBILE
+        {kEdsEvfOutputDevice_MOBILE, "Mobile"},
+        {kEdsEvfOutputDevice_MOBILE2, "Mobile2"},
+#endif
         {kEdsEvfOutputDevice_PC, "PC"},
         {kEdsEvfOutputDevice_PC_Small, "PCSmall"},
     };

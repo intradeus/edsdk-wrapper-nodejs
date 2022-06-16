@@ -117,7 +117,7 @@ export class OutputDevice implements PropertyValue {
      * @readonly
      * @enum {number}
      */
-     static readonly ID: {[label: string]: number} = {"None":0,"PC":2,"PCSmall":8,"TFT":1};
+     static readonly ID = {"None":0,"PC":2,"TFT":1};
 
     // GenerateEnd
 }

@@ -22,7 +22,7 @@ namespace CameraApi {
 
     struct LiveViewEventData {
         CameraReference camera;
-        boolean isActive = false;
+        Boolean isActive = false;
     };
 
     struct PropertyEventData {
