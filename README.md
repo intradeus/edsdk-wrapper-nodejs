@@ -10,8 +10,8 @@ Thanks a lot to both of them for their work. I'm just cleaning, testing differen
 * [FAQ](#faq)
 * [API Documentation](API.md)
 
-## Build Package
-### WINDOWS | EDSDK v13.14.40 | Tested with Node v[14.16.0, 16.13.0]
+## Build Package (WIP, DONT USE)
+### (WIP DONT USE) MACOS | EDSDK v13.14.40 | Tested with Node v[14.16.0, 16.13.0]
 The package does not include the Canon EDSDK files. To install the package you will have 
 to build a TGZ.
 
