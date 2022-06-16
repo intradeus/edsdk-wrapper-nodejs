@@ -2,8 +2,10 @@ build/
 cmake-build/
 cmake-build-debug/
 node_modules/
+node_packages/
 prebuilds/
 npm-debug.log
 
-third_party/*
+third_party/EDSDK/Windows/EDSDK
+third_party/EDSDK/Windows/EDSDK_64
 !third_party/README.md
