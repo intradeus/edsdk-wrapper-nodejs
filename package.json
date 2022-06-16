@@ -17,11 +17,8 @@
   "scripts": {
     "install": "node-gyp-build",
     "package": "npm run prebuild && node helpers/create-tgz.js",
-    "prebuild": "run-script-os",
-    "prebuild:win32": "npm run prebuild:ia32 && npm run prebuild:x64 && npm run build:stubs",
-    "prebuild:darwin": "npm run prebuild:x64 && npm run build:stubs",
-    "prebuild:x64": "prebuildify --napi --strip --arch x64 --verbose",
-    "prebuild:ia32": "prebuildify --napi --strip --arch ia32 --verbose",
+    "prebuild": "npm run prebuild:x64 && npm run build:stubs",
+    "prebuild:x64": "prebuildify --napi --arch x64 --platform darwin --verbose",
     "build:stubs": "npm run _update:stubs && npm run _build:stubs:types && npm run _build:es2015 && npm run _build:esm && npm run _build:umd && npm run _build:umd:min",
     "build:docs": "jsdoc2md --partial helpers/examples.hbs --no-gfm --heading-depth 1 --files stubs/es2015/**/*.js >API.md",
     "clean": "node-gyp clean && rimraf prebuilds/* && npm run _clean:stubs",

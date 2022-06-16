@@ -5,7 +5,7 @@
 #include "base64.h"
 #include "utility.h"
 
-namespace fs = std::filesystem;
+namespace fs = std::__fs::filesystem;
 
 namespace CameraApi {
 

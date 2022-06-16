@@ -3,6 +3,7 @@
 #include <memory>
 #include <string>
 #include <stdexcept>
+#include <stdio.h>
 #include <EDSDKErrors.h>
 
 namespace CameraApi {

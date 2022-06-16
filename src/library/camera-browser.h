@@ -38,7 +38,7 @@ namespace CameraApi {
 
             void handleApiError(EdsError errorCode);
 
-            void triggerEvents();
+            EdsError triggerEvents();
 
             void inline retain() {
                 referenceCount_++;
@@ -65,7 +65,7 @@ namespace CameraApi {
 
             std::vector<CameraReference> cameras_;
 
-            static EdsError __stdcall handleCameraAdded(EdsVoid *inContext);
+            static EdsError handleCameraAdded(EdsVoid *inContext);
     };
 
     class CameraBrowserWrap : public Napi::ObjectWrap<CameraBrowserWrap> {

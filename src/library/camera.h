@@ -3,7 +3,7 @@
 
 #include "types.h"
 
-namespace CameraApi {
+extern "C" namespace CameraApi {
 
     typedef std::shared_ptr<class Camera> CameraReference;
 
@@ -68,13 +68,13 @@ namespace CameraApi {
 
             bool hasEventEmit();
 
-            static EdsError __stdcall handleStateEvent(EdsStateEvent inEvent, EdsUInt32 inParam, EdsVoid *inContext);
+            static EdsError handleStateEvent(EdsStateEvent inEvent, EdsUInt32 inParam, EdsVoid *inContext);
 
-            static EdsError __stdcall handlePropertyEvent(
+            static EdsError handlePropertyEvent(
                 EdsPropertyEvent inEvent, EdsUInt32 inPropertyID, EdsUInt32 inParam, EdsVoid *inContext
             );
 
-            static EdsError __stdcall handleObjectEvent(EdsObjectEvent inEvent, EdsBaseRef inRef, EdsVoid *inContext);
+            static EdsError handleObjectEvent(EdsObjectEvent inEvent, EdsBaseRef inRef, EdsVoid *inContext);
 
             void emitCameraEvent(const std::string& eventName);
     };

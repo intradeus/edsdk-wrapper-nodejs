@@ -95,7 +95,7 @@
                             "<(module_root_dir)/third_party/EDSDK/macos/EDSDK/Header"
                         ],
                         "libraries": [
-                          "../third_party/EDSDK/macos/EDSDK/Framework/EDSDK.framework"
+                          "../third_party/EDSDK/macos/EDSDK/Framework/EDSDK.framework/Versions/A/EDSDK"
                         ],
                         'xcode_settings': {
                             'GCC_ENABLE_CPP_EXCEPTIONS': 'YES',
@@ -114,7 +114,7 @@
                             {
                                 "destination": "<(PRODUCT_DIR)",
                                 "files": [
-                                    "<(module_root_dir)/third_party/EDSDK/macos/EDSDK/Framework/EDSDK.Framework"
+                                     "<(module_root_dir)/third_party/EDSDK/macos/EDSDK/Framework/EDSDK.Framework/Versions/A/EDSDK"
                                 ]
                             }
                         ]

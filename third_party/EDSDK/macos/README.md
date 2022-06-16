@@ -1,0 +1,1 @@
+Please drop the `EDSDK` folder from Canon's EDSDK dmg file into this folder.

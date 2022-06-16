@@ -3,10 +3,9 @@
 
 namespace CameraApi {
 
-
     LabelMap FileFormatLabels = {
         {kEdsObjectFormat_Unknown, "Unknown"},
-        {kEdsObjectFormat_Jpeg, "JPEG"},
+        {kEdsObjectFormat_JPEG, "JPEG"},
         {kEdsObjectFormat_CR2, "CR2"},
         {kEdsObjectFormat_CR3, "CR3"},
         {kEdsObjectFormat_MP4, "MP4"},

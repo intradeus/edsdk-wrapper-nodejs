@@ -20,40 +20,40 @@ namespace CameraApi {
     const char EventName_ObjectChange[] = "ObjectChange";
     const char EventName_Error[] = "Error";
 
-    const std::vector CameraBrowserEvents = {
-        EventName_CameraAdd,
-        EventName_CameraRemove,
-        EventName_CameraConnect,
-        EventName_CameraDisconnect,
-        EventName_StateChange,
-        EventName_KeepAlive,
-        EventName_LiveViewStart,
-        EventName_LiveViewStop,
-        EventName_PropertyChangeOptions,
-        EventName_PropertyChangeValue,
-        EventName_DownloadRequest,
-        EventName_FileCreate,
-        EventName_DirectoryCreate,
-        EventName_VolumeChange,
-        EventName_ObjectChange,
-        EventName_Error
+    const char CameraBrowserEvents[16][40] = {
+        "CameraAdd",
+        "CameraRemove",
+        "CameraConnect",
+        "CameraDisconnect",
+        "StateChange",
+        "KeepAlive",
+        "LiveViewStart",
+        "LiveViewStop",
+        "PropertyChangeOptions",
+        "PropertyChangeValue",
+        "DownloadRequest",
+        "FileCreate",
+        "DirectoryCreate",
+        "VolumeChange",
+        "ObjectChange",
+        "Error",
     };
 
-    const std::vector CameraEvents = {
-        EventName_CameraConnect,
-        EventName_CameraDisconnect,
-        EventName_StateChange,
-        EventName_KeepAlive,
-        EventName_LiveViewStart,
-        EventName_LiveViewStop,
-        EventName_PropertyChangeOptions,
-        EventName_PropertyChangeValue,
-        EventName_DownloadRequest,
-        EventName_FileCreate,
-        EventName_DirectoryCreate,
-        EventName_VolumeChange,
-        EventName_ObjectChange,
-        EventName_Error
+    const char CameraEvents[14][40] = {
+        "CameraConnect",
+        "CameraDisconnect",
+        "StateChange",
+        "KeepAlive",
+        "LiveViewStart",
+        "LiveViewStop",
+        "PropertyChangeOptions",
+        "PropertyChangeValue",
+        "DownloadRequest",
+        "FileCreate",
+        "DirectoryCreate",
+        "VolumeChange",
+        "ObjectChange",
+        "Error"
     };
 }
 

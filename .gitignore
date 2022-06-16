@@ -6,6 +6,5 @@ node_packages/
 prebuilds/
 npm-debug.log
 
-third_party/EDSDK/Windows/EDSDK
-third_party/EDSDK/Windows/EDSDK_64
+third_party/EDSDK/macos/EDSDK
 !third_party/README.md

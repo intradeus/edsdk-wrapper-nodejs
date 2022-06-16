@@ -338,11 +338,6 @@ namespace CameraApi {
         {0x00, "None"},
         {kEdsEvfOutputDevice_PC, "PC"},
         {kEdsEvfOutputDevice_TFT, "TFT"}
-// Mobile not available on macOS
-#ifdef kEdsEvfOutputDevice_MOBILE
-        ,{kEdsEvfOutputDevice_MOBILE, "Mobile"},
-        {kEdsEvfOutputDevice_MOBILE2, "Mobile2"}
-#endif
     };
 
     LabelMap Labels::EvfZoom = {
