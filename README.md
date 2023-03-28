@@ -39,8 +39,7 @@ to build a TGZ.
 ## Features
 
 The EDSDK provides a lot of features and not all of them are
-implemented in the module. Our use case was a photo booth 
-application.
+implemented in the module. Your use cases might be different.
 
 - [x] List Cameras
 - [x] Camera Events
